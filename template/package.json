@@ -1,5 +1,5 @@
 {
-    "name": "webpack-multipage-solution",
+    "name": "{{name}}",
     "version": "0.0.1",
     "description": "Using webpack in multipage application",
     "license": "MIT",
