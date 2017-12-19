@@ -4,6 +4,7 @@ const path = require("path");
 const serve = require("koa-static");
 
 const asset = require("./middlewares/asset_koa");
+const pages = require("./routes/pages");
 
 const app = new koa();
 
@@ -28,10 +29,7 @@ app.use(
     manifestPath: path.join(__dirname, "../public/assets", "manifest.json")
   })
 );
-
-app.use(async function(ctx) {
-  await ctx.render("home", { title: "home" });
-});
+app.use(pages());
 
 app.listen(3000, () => {
   console.log("koa app started at http://localhost:3000");

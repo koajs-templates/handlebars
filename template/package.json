@@ -41,11 +41,9 @@
         "webpack-dev-server": "^2.9.4"
     },
     "dependencies": {
-        "express": "^4.16.2",
-        "express-handlebars": "^3.0.0",
         "koa": "^2.4.1",
         "koa-hbs": "^1.0.0",
-        "koa-router": "^7.2.1",
+        "koa-router": "^7.3.0",
         "koa-static": "^4.0.1"
     }
 }
